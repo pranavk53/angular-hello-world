@@ -1,0 +1,79 @@
+
+<div class="col-sm-6">
+
+  <form #sampleForm="ngForm">
+
+    <div class="form-group">   
+
+      <input type="text" placeholder="Select the Date" class="form-control" bsDatepicker>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control">        
+        <option value="0" selected>Select total Passengers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="search()">Search</button>
+    
+  </form>
+
+  <!--<mv-slider
+      [min]="0" [max]="10000" [enabled]="enabled" 
+      range="true" step="1000"
+      ticks="[0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000]"
+      (valueChange)="change()"></mv-slider>  -->
+
+</div>
+
+
+<!--
+<form [formGroup]="myForm" >
+  <div class="row">
+    <div class="col-xs-12 col-md-5 col-lg-4 form-group">
+      <input
+        class="form-control"
+        #dpYMD="bsDatepicker"
+        bsDatepicker
+        formControlName="myDateYMD"
+        [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }">
+    </div>
+    <div class="col-xs-12 col-12 col-md-3 form-group">
+      <button class="btn btn-success" (click)="dpYMD.toggle()" [attr.aria-expanded]="dpYMD.isOpen">Date Picker</button>
+    </div>
+  </div>
+  <br>
+ 
+  <div class="row">
+    <div class="col-xs-12 col-md-5 col-lg-4 form-group">
+      <input
+        class="form-control"
+        #dpMDY="bsDatepicker"
+        bsDatepicker
+        formControlName="myDateMDY"
+        [bsConfig]="{ dateInputFormat: 'MM/DD/YYYY' }">
+    </div>
+    <div class="col-xs-12 col-12 col-md-3 form-group">
+      <button class="btn btn-success" (click)="dpMDY.toggle()" [attr.aria-expanded]="dpMDY.isOpen">Date Picker</button>
+    </div>
+  </div>
+  <br>
+ 
+  <div class="row">
+    <div class="col-xs-12 col-md-5 col-lg-4 form-group">
+      <input
+        class="form-control"
+        #dpFull="bsDatepicker"
+        bsDatepicker
+        formControlName="myDateFull"
+        [bsConfig]="{ dateInputFormat: 'MMMM Do YYYY, h:mm:ss a' }">
+    </div>
+    <div class="col-xs-12 col-12 col-md-3 form-group">
+      <button class="btn btn-success" (click)="dpFull.toggle()" [attr.aria-expanded]="dpFull.isOpen">Date Picker</button>
+    </div>
+  </div>
+</form>
+-->
