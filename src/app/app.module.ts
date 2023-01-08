@@ -13,6 +13,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { ChildComponent } from './child/child.component';
 import { Test123Component } from './test123/test123.component';
+import { C11Component } from './c11/c11.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Test123Component } from './test123/test123.component';
     SampleComponent,
     SidemenuComponent,
     ChildComponent,
-    Test123Component
+    Test123Component,
+    C11Component
   ],
   imports: [
     BrowserModule,
